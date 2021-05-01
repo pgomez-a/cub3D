@@ -26,11 +26,9 @@ These are the ones that I consider the most important. However, you will have to
   <li><a href="https://harm-smits.github.io/42docs/libs/minilibx">42 Docs.</a></li>
   <li><a href="https://qst0.github.io/ft_libgfx/man_mlx.html">Mlx Manual.</a></li>
 </ul>
-<br>
-If you want a clue, consider the following proposal:
-     thanks to mlx_pixel_put we can write on the new image the pixel we pass as a parameter to the function. The problem is that this function
-     writes directly over the screen without caring about any render frame. This makes this function too slow. To solve it, we will have to
-     create a temporary image where we will write our pixels, and once the image is completed, we will put it over the screen.
+
+    Clue: mlx_pixel_put writes directly over the screen without caring about any render frame. It sound good to use a temporary buffer.
+
 
 ### How does the color work?
 
