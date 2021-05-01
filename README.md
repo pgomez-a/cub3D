@@ -21,7 +21,7 @@ MinilibX is the graphic library that 42 allows us to use to made our cub3D proje
   <li><b>mlx_loop:</b> loop over the given mlx pointer.</li>
   <li><b>mlx_xmp_file_to_image:</b> converts an xmp file to a new image instance.</li>
 </ul>
-These are the ones that I consider the most important. However, you will have to <b>RFM</b> if you want to prevent some problems in the future. Take in mind that, if you want to do a good project, you first have to understand the tools your are going to work with. And because I know that the manual is a bit quiet, I suggest you to read some of these pages to get a better idea of the things you can do with mlx.
+These are the ones that I consider the most important. However, you will have to <b>RFM</b> if you want to prevent some problems in the future. Take in mind that, if you want to do a good project, you first have to understand the tools your are going to work with. And because I know that the manual is a bit quiet, I suggest you to read some of these pages to get a better idea of the things you can do with mlx:
 <ul>
   <li><a href="https://harm-smits.github.io/42docs/libs/minilibx">42 Docs.</a></li>
   <li><a href="https://qst0.github.io/ft_libgfx/man_mlx.html">Mlx Manual.</a></li>
@@ -29,7 +29,21 @@ These are the ones that I consider the most important. However, you will have to
 
     Clue: mlx_pixel_put writes directly over the screen without caring about any render frame. It sound good to use a temporary buffer.
 
-
 ### How does the color work?
+Colors are represented in an <b>int format.</b> The color type we will use is the <b>TRUE COLOR</b>, also known as <b>TRGB.</b> To define a color, we initialize as: 0xTTRRGGBB, where each character means the following:
+<ul>
+  <li><b>T:</b> transparency --> 0xFF000000</li>
+  <li><b>R:</b> red --> 0x00FF0000</li>
+  <li><b>G:</b> green --> 0x0000FF00</li>
+  <li><b>B:</b> blue --> 0x000000FF/li>
+</ul>
+Now that we know how colors are represented, it might be nice to know how to manipulate them in case we want to change some of the values of a color. For example, if all the walls in a room are white, it might be a good idea to change the transparency of some of the walls to differentiate them. The variables that we will use to manipulate the colors are:
+<ul>
+  <li><b>Bits per pixel:</b> (bpp) is the number of different colors in an image based on the color depth.</li>
+  <li><b>Line-length:</b> image width size.</li>
+  <li><b>Endian:</b> a term that describes how a sequence of bytes is sorted in computer memory. The adjectives "big" and "small" are used to specify which value is stored first. <b>Big Endian</b> stores the most significant value first, and <b>Small Endian</b> stores the least significant value first.</li>
+</ul>
+
+### Events
 
 ### The technique of castin rays
