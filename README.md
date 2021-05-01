@@ -8,7 +8,7 @@ The first game built on a ray casting engine to achieve massive success was <b>W
 Moder video games have advanced significantly since Wolfenstein 3D, with faster CPUs, more memory, ant the availability of GPUs to accelerate the computation of 3D graphics. However, most modern video game 3D engines still use an advanced form of raycasting, because it remains the most efficient methos to render a 3D image.
 
 ### What is MinilibX?
-MinilibX is the graphic library that 42 allows us to use to made our cub3D project. With it, we have some of the most basics tasks we can use to draw pixels on a screen or to make an image before putting it into that screen. Some of the most useful functions are:
+MinilibX is the graphic library that 42 allows us to use to made our cub3D project. With it, we have some of the most basics tasks we can use to draw pixels on a screen or to make an image before putting it into that screen. Mlx provides us a call to the creation of screens, a drawing tool and a system to manage events. Some of the most useful functions are:
 <ul>
   <li><b>mlx_init:</b> initializes the MLX library. Is the first function we have call before using the rest of the functions. Will return NULL in case of a failed initialization.</li>
   <li><b>mlx_clear_window:</b> clears the current window.</li>
@@ -21,7 +21,16 @@ MinilibX is the graphic library that 42 allows us to use to made our cub3D proje
   <li><b>mlx_loop:</b> loop over the given mlx pointer.</li>
   <li><b>mlx_xmp_file_to_image:</b> converts an xmp file to a new image instance.</li>
 </ul>
-These are the ones that I consider they are the most important. However, you will have to <b>RFM</b> if you want to prevent some problems in the future. Take in mind that, if you want to do a good project, you first have to understand the tools your are going to work with. And because I know that the manual is a bit quiet, I suggest you to read some of these pages to get a better idea of the things you can do with mlx.
+These are the ones that I consider the most important. However, you will have to <b>RFM</b> if you want to prevent some problems in the future. Take in mind that, if you want to do a good project, you first have to understand the tools your are going to work with. And because I know that the manual is a bit quiet, I suggest you to read some of these pages to get a better idea of the things you can do with mlx.
+<ul>
+  <li><a href="https://harm-smits.github.io/42docs/libs/minilibx">42 Docs.</a></li>
+  <li><a href="https://qst0.github.io/ft_libgfx/man_mlx.html">Mlx Manual.</a></li>
+</ul>
+<br>
+If you want a clue, consider the following proposal:
+     thanks to mlx_pixel_put we can write on the new image the pixel we pass as a parameter to the function. The problem is that this function
+     writes directly over the screen without caring about any render frame. This makes this function too slow. To solve it, we will have to
+     create a temporary image where we will write our pixels, and once the image is completed, we will put it over the screen.
 
 ### How does the color work?
 
