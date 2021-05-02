@@ -80,6 +80,10 @@ All hooks from <b>mlx</b> are functions that are called when an event is found:
   <li><b>MotionNotify:</b> information about a moving mouse.
 </ul>
 The <b>X-Window & MacOSX graphic systems</b> are bidirectional. On the one hand, the program sends commands to the screen to display pixels, images, etc. On the other hand, it can obtain information from the mouse and keyboard linked to the screen. Finally, the program receives events from the mouse and keyboard.
+<img width="300" alt="map" src="https://user-images.githubusercontent.com/74931024/116813920-9deca180-ab56-11eb-833c-188276c15a07.png" align="left">
 
 ### The technique of castin rays
-To do the cub3D you will have to read many articles about lights, colors, rays, mathematics, trigonometry, 3D games, raycasting, raytracing, etc. The good thing is that you will end up knowing a lot of things that are amazing and that you have never thought about. From here on, I recommend you to read as much as you can while coding your <b>cub.</b> Don't be ashamed to ask me any questions you have and don't feel bad if you have to use a mathematic function that you don't fully understand how it works. But make sure you know what you are doing while having fun coding :)
+To do the cub3D you will have to read many articles about lights, colors, rays, mathematics, trigonometry, 3D games, raycasting, raytracing, etc. The good thing is that you will end up knowing a lot of things that are amazing and that you have never thought about. From here on, I recommend you to read as much as you can while coding your <b>cub.</b> Don't be ashamed to ask me any questions you have and don't feel bad if you have to use a mathematic function that you don't fully understand how it works. But make sure you know what you are doing while having fun coding :)<br><br>
+
+<img width="1920" alt="world" src="https://user-images.githubusercontent.com/74931024/116813933-ac3abd80-ab56-11eb-95e7-3d964f1ea426.png" align="center">
+
