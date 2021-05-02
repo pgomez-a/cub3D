@@ -1,12 +1,19 @@
 # cub3D
+<img width="1918" alt="Graded by peers" src="https://user-images.githubusercontent.com/74931024/116813075-5237f900-ab52-11eb-9186-1d47160bc38b.png">
+
 ### What is raycasting?
 According to <a href="https://www.computerhope.com/jargon/r/ray-casting.htm">computer hope</a>, a ray casting is the most basic form of raytracing in CGI (computer-generated imagery). Unlike other forms of ray tracing, where rays originate grom a light source and bounce off objects to arrive at the observer, in ray casting, they are cast directly from the viewpoint. When cast rays intersect an object, the object's color and brightness at that point determines the value of one pixel in the final image.<br>
 A direction vector represents the orientation of the observer extending forward. A camera plane, perpendicular to the direction vector and representing the shape of the final rendered image, is also required.
+<img alt="animated square" src="https://user-images.githubusercontent.com/74931024/116812886-6f1ffc80-ab51-11eb-979f-28e3a81d23a5.gif" width="200" height="200" align="right">
 
 ### Curiosities of ray casting
 The first game built on a ray casting engine to achieve massive success was <b>Wolfenstein 3D</b>. The game provided and interactive 3D world, displaying it at a higher frame rate and with a more advanced level of photorealism than previous games.<br>
 Moder video games have advanced significantly since Wolfenstein 3D, with faster CPUs, more memory, ant the availability of GPUs to accelerate the computation of 3D graphics. However, most modern video game 3D engines still use an advanced form of raycasting, because it remains the most efficient methos to render a 3D image.
-<img alt="animated square" src="https://user-images.githubusercontent.com/74931024/116812886-6f1ffc80-ab51-11eb-979f-28e3a81d23a5.gif" width="200" height="200" align="right">
+<br>
+<img alt="map in 2D map" src="https://user-images.githubusercontent.com/74931024/116813307-7516dd00-ab53-11eb-98ec-cb22cd7a0ace.png" widdth="200" height="200" align="left">
+<img alt="player in 2D map" src="https://user-images.githubusercontent.com/74931024/116813342-a394b800-ab53-11eb-89f0-e5e00dcf5b27.gif" width="200" height="200" align="center">
+<img alt="ray in 2D map" src="https://user-images.githubusercontent.com/74931024/116813404-f2dae880-ab53-11eb-9f83-31e5b32e1dbf.gif" width="200" height="200" align="right">
+<br>
 
 ### What is MinilibX?
 MinilibX is the graphic library that 42 allows us to use to made our cub3D project. With it, we have some of the most basics tasks we can use to draw pixels on a screen or to make an image before putting it into that screen. Mlx provides us a call to the creation of screens, a drawing tool and a system to manage events. Some of the most useful functions are:
@@ -39,6 +46,7 @@ Colors are represented in an <b>int format.</b> The color type we will use is th
   <li><b>B:</b> blue --> 0x000000FF/li>
 </ul>
 Now that we know how colors are represented, it might be nice to know how to manipulate them in case we want to change some of the values of a color. For example, if all the walls in a room are white, it might be a good idea to change the transparency of some of the walls to differentiate them. The variables that we will use to manipulate the colors are:
+<img alt="events gif" src="https://user-images.githubusercontent.com/74931024/116813166-bc509e00-ab52-11eb-9379-614392c04524.gif" width="200" height="200" align="right">
 <ul>
   <li><b>Bits per pixel:</b> (bpp) is the number of different colors in an image based on the color depth.</li>
   <li><b>Line-length:</b> image width size.</li>
