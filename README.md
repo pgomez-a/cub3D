@@ -4,7 +4,6 @@
 ### What is raycasting?
 According to <a href="https://www.computerhope.com/jargon/r/ray-casting.htm">computer hope</a>, a ray casting is the most basic form of raytracing in CGI (computer-generated imagery). Unlike other forms of ray tracing, where rays originate grom a light source and bounce off objects to arrive at the observer, in ray casting, they are cast directly from the viewpoint. When cast rays intersect an object, the object's color and brightness at that point determines the value of one pixel in the final image.<br>
 A direction vector represents the orientation of the observer extending forward. A camera plane, perpendicular to the direction vector and representing the shape of the final rendered image, is also required.
-<img alt="animated square" src="https://user-images.githubusercontent.com/74931024/116812886-6f1ffc80-ab51-11eb-979f-28e3a81d23a5.gif" width="200" height="200" align="right">
 
 ### Curiosities of ray casting
 The first game built on a ray casting engine to achieve massive success was <b>Wolfenstein 3D</b>. The game provided and interactive 3D world, displaying it at a higher frame rate and with a more advanced level of photorealism than previous games.<br>
@@ -13,6 +12,7 @@ Moder video games have advanced significantly since Wolfenstein 3D, with faster 
 <img alt="map in 2D map" src="https://user-images.githubusercontent.com/74931024/116813307-7516dd00-ab53-11eb-98ec-cb22cd7a0ace.png" widdth="200" height="200" align="center">
 <img alt="player in 2D map" src="https://user-images.githubusercontent.com/74931024/116813342-a394b800-ab53-11eb-89f0-e5e00dcf5b27.gif" width="200" height="200" align="center">
 <img alt="ray in 2D map" src="https://user-images.githubusercontent.com/74931024/116813404-f2dae880-ab53-11eb-9f83-31e5b32e1dbf.gif" width="200" height="200" align="center">
+<img alt="animated square" src="https://user-images.githubusercontent.com/74931024/116812886-6f1ffc80-ab51-11eb-979f-28e3a81d23a5.gif" width="200" height="200" align="right">
 <br>
 
 ### What is MinilibX?
