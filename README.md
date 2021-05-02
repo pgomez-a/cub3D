@@ -44,6 +44,25 @@ Now that we know how colors are represented, it might be nice to know how to man
   <li><b>Endian:</b> a term that describes how a sequence of bytes is sorted in computer memory. The adjectives "big" and "small" are used to specify which value is stored first. <b>Big Endian</b> stores the most significant value first, and <b>Small Endian</b> stores the least significant value first.</li>
 </ul>
 
+### Bitwise Operations
+To understand how colors are made, we need to know how to work with <b>bits (binary digits)</b> in C. The operators we are going to use are the same we might find when it comes to work with boolean algebra. This operators are:
+<ul>
+  <li><b>& AND:</b> multiplication operation.</li>
+  <li><b>I OR:</b> addition operation.</li>
+  <li><b>^ XOR:</b> if the states are different the return is 1, otherwise is 0.</li>
+  <li><b>~ NOT:</b> inverts the values of the bits.</li>
+  <li><b>>>:</b> bits are shifted from left to right.</li>
+  <li><b><<:</b> bits are shifted from right to left.</li>
+</ul>
+
+  AND                | OR                   | XOR                | NOT
+  :----------------: | :-----------------:  | :----------------: | :-------------:
+  0 & 0 --> 0        | 0 \| 0 --> 0         | 0 ^ 0 --> 0        | ~0 --> 1
+  0 & 1 --> 0        | 0 \| 1 --> 1         | 0 ^ 1 --> 1        | ~1 --> 0
+  1 & 0 --> 0        | 1 \| 0 --> 1         | 1 ^ 0 --> 1        |
+  1 & 1 --> 1        | 1 \| 1 --> 1         | 1 ^ 1 --> 0        |
+
 ### Events
+
 
 ### The technique of castin rays
