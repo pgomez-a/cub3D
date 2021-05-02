@@ -6,6 +6,7 @@ A direction vector represents the orientation of the observer extending forward.
 ### Curiosities of ray casting
 The first game built on a ray casting engine to achieve massive success was <b>Wolfenstein 3D</b>. The game provided and interactive 3D world, displaying it at a higher frame rate and with a more advanced level of photorealism than previous games.<br>
 Moder video games have advanced significantly since Wolfenstein 3D, with faster CPUs, more memory, ant the availability of GPUs to accelerate the computation of 3D graphics. However, most modern video game 3D engines still use an advanced form of raycasting, because it remains the most efficient methos to render a 3D image.
+<img alt="animated square" src="https://user-images.githubusercontent.com/74931024/116812886-6f1ffc80-ab51-11eb-979f-28e3a81d23a5.gif" width="200" height="200" align="right">
 
 ### What is MinilibX?
 MinilibX is the graphic library that 42 allows us to use to made our cub3D project. With it, we have some of the most basics tasks we can use to draw pixels on a screen or to make an image before putting it into that screen. Mlx provides us a call to the creation of screens, a drawing tool and a system to manage events. Some of the most useful functions are:
