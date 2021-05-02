@@ -45,7 +45,7 @@ Now that we know how colors are represented, it might be nice to know how to man
 </ul>
 
 ### Bitwise Operations
-To understand how colors are made, we need to know how to work with <b>bits (binary digits)</b> in C. The operators we are going to use are the same we might find when it comes to work with boolean algebra. This operators are:
+To understand how colors are made, we need to know how to work with <b>bits (binary digits)</b> in C. The operators we are going to use are the same we can find when it comes to working with Boolean algebra. These operators are:
 <ul>
   <li><b>& AND:</b> multiplication operation.</li>
   <li><b>I OR:</b> addition operation.</li>
@@ -63,6 +63,14 @@ To understand how colors are made, we need to know how to work with <b>bits (bin
   1 & 1 --> 1        | 1 \| 1 --> 1         | 1 ^ 1 --> 0        |
 
 ### Events
-
+Before understanding how events work, we must know the concept of hooking. Hooking is a set of techniques used to modify the behaviour of operating systems, applications or another software through function calls and events. The software that controls this is called the <b>HOOK.</b><br>
+All hooks from <b>mlx</b> are functions that are called when an event is found:
+<ul>
+  <li><b>KeyPress/KeyRelease:</b> information about a key that is pressed or released.</li>
+  <li><b>ButtonPress/ButtonRelease:</b> information about a button that is pressed or released.</li>
+  <li><b>MotionNotify:</b> information about a moving mouse.
+</ul>
+The <b>X-Window & MacOSX graphic systems</b> are bidirectional. On the one hand, the program sends commands to the screen to display pixels, images, etc. On the other hand, it can obtain information from the mouse and keyboard linked to the screen. Finally, the program receives events from the mouse and keyboard.
 
 ### The technique of castin rays
+To do the cub3D you will have to read many articles about lights, colors, rays, mathematics, trigonometry, 3D games, raycasting, raytracing, etc. The good thing is that you will end up knowing a lot of things that are amazing and that you have never thought about. From here on, I recommend you to read as much as you can while coding your <b>cub.</b> Don't be ashamed to ask me any questions you have and don't feel bad if you have to use a mathematic function that you don't fully understand how it works. But make sure you know what you are doing while having fun coding :)
