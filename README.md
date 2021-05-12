@@ -1,5 +1,5 @@
 # cub3D
-<img width="1918" alt="Graded by peers" src="https://user-images.githubusercontent.com/74931024/116813075-5237f900-ab52-11eb-9186-1d47160bc38b.png">
+<img width="1925" alt="cub3d" src="https://user-images.githubusercontent.com/74931024/117972568-9a61d300-b32b-11eb-8aca-e419e3503dad.png">
 
 ### What is raycasting?
 According to <a href="https://www.computerhope.com/jargon/r/ray-casting.htm">computer hope</a>, a ray casting is the most basic form of raytracing in CGI (computer-generated imagery). Unlike other forms of ray tracing, where rays originate grom a light source and bounce off objects to arrive at the observer, in ray casting, they are cast directly from the viewpoint. When cast rays intersect an object, the object's color and brightness at that point determines the value of one pixel in the final image.<br>
