@@ -7,6 +7,19 @@
 According to <a href="https://www.computerhope.com/jargon/r/ray-casting.htm">computer hope</a>, a ray casting is the most basic form of raytracing in CGI (computer-generated imagery). Unlike other forms of ray tracing, where rays originate grom a light source and bounce off objects to arrive at the observer, in ray casting, they are cast directly from the viewpoint. When cast rays intersect an object, the object's color and brightness at that point determines the value of one pixel in the final image.<br>
 A direction vector represents the orientation of the observer extending forward. A camera plane, perpendicular to the direction vector and representing the shape of the final rendered image, is also required.
 
+### How to run cub3D?
+1. Clone cub3D repository:
+
+       git clone https://github.com/pgomez-a/cub3D.git && cd cub3D
+
+2. Run <b>make</b> to create the game>:
+
+       make
+
+3. Execute cub3D with the map path you want to play:
+
+       ./cub3D maps/map5.cub
+
 ### Curiosities of ray casting
 The first game built on a ray casting engine to achieve massive success was <b>Wolfenstein 3D</b>. The game provided and interactive 3D world, displaying it at a higher frame rate and with a more advanced level of photorealism than previous games.<br>
 Moder video games have advanced significantly since Wolfenstein 3D, with faster CPUs, more memory, ant the availability of GPUs to accelerate the computation of 3D graphics. However, most modern video game 3D engines still use an advanced form of raycasting, because it remains the most efficient methos to render a 3D image.
