@@ -12,7 +12,7 @@ A direction vector represents the orientation of the observer extending forward.
 
        git clone https://github.com/pgomez-a/cub3D.git && cd cub3D
 
-2. Run <b>make</b> to create the game>:
+2. Run <b>make</b> to create the game:
 
        make
 
